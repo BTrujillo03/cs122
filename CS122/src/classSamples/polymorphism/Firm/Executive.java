@@ -6,6 +6,7 @@ package classSamples.polymorphism.Firm;//***************************************
 
 public class Executive extends Employee {
 	private double bonus;
+	private int extra_vacay_days = 4;
 
 	// -----------------------------------------------------------------
 	// Constructor: Sets up this executive with the specified
@@ -34,5 +35,11 @@ public class Executive extends Employee {
 		bonus = 0;
 
 		return payment;
+	}
+	
+	public double getVacationDays() {
+		return super.getVacationDays() + extra_vacay_days;
+		
+		
 	}
 }

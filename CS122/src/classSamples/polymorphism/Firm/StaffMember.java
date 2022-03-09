@@ -5,6 +5,7 @@ package classSamples.polymorphism.Firm;//***************************************
 //********************************************************************
 
 abstract public class StaffMember {
+	protected int VACATION_DAYS = 14;
 	protected String name;
 	protected String address;
 	protected String phone;
@@ -27,13 +28,20 @@ abstract public class StaffMember {
 
 		result += "Address: " + address + "\n";
 		result += "Phone: " + phone;
+		result += "Vacation" + this.VacationDays();
 
 		return result;
 	}
+	
+	
+		
+	
 
 	// -----------------------------------------------------------------
 	// Derived classes must define the pay method for each type of
 	// employee.
 	// -----------------------------------------------------------------
 	public abstract double pay();
+	
+	public abstract double getVacationDays();
 }

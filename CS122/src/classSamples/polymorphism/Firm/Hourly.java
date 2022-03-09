@@ -6,6 +6,7 @@ package classSamples.polymorphism.Firm;//***************************************
 
 public class Hourly extends Employee {
 	private int hoursWorked;
+	private int extra_vacay_days= 3;
 
 	// -----------------------------------------------------------------
 	// Constructor: Sets up this hourly employee using the specified
@@ -41,9 +42,15 @@ public class Hourly extends Employee {
 	// -----------------------------------------------------------------
 	public String toString() {
 		String result = super.toString();
+		// toString calls from Staff
 
 		result += "\nCurrent hours: " + hoursWorked;
 
 		return result;
+	}
+	
+	public double getVacationDays() {
+		
+		return super.getVacationDays() + extra_vacay_days;
 	}
 }

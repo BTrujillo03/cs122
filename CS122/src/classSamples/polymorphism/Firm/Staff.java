@@ -24,6 +24,7 @@ public class Staff {
 		staffList[5] = new Volunteer("Cliff", "321 Duds Lane", "555-7282");
 
 		((Executive) staffList[0]).awardBonus(500.00);
+		
 
 		((Hourly) staffList[3]).addHours(40);
 	}
@@ -31,10 +32,22 @@ public class Staff {
 	// -----------------------------------------------------------------
 	// Pays all staff members.
 	// -----------------------------------------------------------------
-	public void payday() {
-		double amount;
+	public void VacationDays() {
+		
+		System.out.println( "Get Vacation Days: ");
+		
+		for ( int count = 0; count < staffList.length; ++count);
+	}
+	
+	System.out.println(staffList[count]);
+	
+	System.out.println("Vacation Days: " + staffList[count].getVacationDays());
+	
+	System.out.println( "---------");
 
-		for (int count = 0; count < staffList.length; count++) {
+	
+
+		/* for (int count = 0; count < staffList.length; count++) {
 			System.out.println(staffList[count]);
 
 			amount = staffList[count].pay(); // polymorphic
@@ -47,4 +60,21 @@ public class Staff {
 			System.out.println("-----------------------------------");
 		}
 	}
-}
+	// Staff member Vacation Days
+	public void VacationDays() {
+		double amount;
+		
+		for(int count = 0; count < staffList.length; count ++) {
+			System.out.println(staffList[count]);
+			
+			amount = staffList[count].pay();
+			
+			if (amount == 0)
+				System.out.println("Thanks!");
+				else
+					System.out.println( "Paid" + amount);  
+			*/
+		}
+	
+	
+
