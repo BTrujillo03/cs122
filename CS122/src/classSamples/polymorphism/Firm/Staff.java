@@ -29,9 +29,14 @@ public class Staff {
 		((Hourly) staffList[3]).addHours(40);
 	}
 
+		
 	// -----------------------------------------------------------------
 	// Pays all staff members.
 	// -----------------------------------------------------------------
+		public void payday() {
+			double amount;
+		
+			
 	public void VacationDays() {
 		
 		System.out.println( "Get Vacation Days: ");
@@ -41,12 +46,22 @@ public class Staff {
 	
 	System.out.println(staffList[count]);
 	
-	System.out.println("Vacation Days: " + staffList[count].getVacationDays());
+	amount = staffList[count].pay();
+	
+	if (amount == 0.0) 
+		System.out.println("Thanks!");
+	else
+		System.out.println("Paid: " + amount);
 	
 	System.out.println( "---------");
-
 	
-
+			
+			
+		}
+}
+}
+	
+		
 		/* for (int count = 0; count < staffList.length; count++) {
 			System.out.println(staffList[count]);
 
@@ -74,7 +89,7 @@ public class Staff {
 				else
 					System.out.println( "Paid" + amount);  
 			*/
-		}
+}
 	
 	
 

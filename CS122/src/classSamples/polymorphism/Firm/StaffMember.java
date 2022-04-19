@@ -14,25 +14,26 @@ abstract public class StaffMember {
 	// Constructor: Sets up this staff member using the specified
 	// information.
 	// -----------------------------------------------------------------
+	
 	public StaffMember(String eName, String eAddress, String ePhone) {
+	
 		name = eName;
 		address = eAddress;
 		phone = ePhone;
 	}
-
 	// -----------------------------------------------------------------
 	// Returns a string including the basic employee information.
 	// -----------------------------------------------------------------
 	public String toString() {
-		String result = "Name: " + name + "\n";
+		String result ="Name:" + name + "\n";
 
 		result += "Address: " + address + "\n";
 		result += "Phone: " + phone;
 		result += "Vacation" + this.VacationDays();
 
 		return result;
+
 	}
-	
 	
 		
 	
@@ -45,3 +46,6 @@ abstract public class StaffMember {
 	
 	public abstract double getVacationDays();
 }
+
+
+

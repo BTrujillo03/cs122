@@ -26,7 +26,7 @@ public class Employee extends StaffMember {
 		String result = super.toString();
 		//it calls the staff "toString" from StaffMember.Java
 
-		result += "\nSocial Security Number: " + socialSecurityNumber
+		result += "\nSocial Security Number: " + socialSecurityNumber;
 
 		return result;
 	}
